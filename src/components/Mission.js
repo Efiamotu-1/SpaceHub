@@ -2,6 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
+
 const Mission = (props) => {
   // eslint-disable-next-line no-unused-vars
   const dispatch = useDispatch();
@@ -11,7 +12,6 @@ const Mission = (props) => {
   } = mission;
 
   const handleRemove = () => {
-  // dispatch(asyncJoinMission(id));
   };
 
   return (
