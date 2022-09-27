@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './missions.css';
+// import './missions.css';
 import { useDispatch } from 'react-redux';
 import { asyncJoinMission } from '../redux/missions/missions';
 
