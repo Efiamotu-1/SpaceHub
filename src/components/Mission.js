@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './missions.css';
+// import './missions.css';
 import { useDispatch } from 'react-redux';
-import { asyncJoinMission } from '../redux/missions/missions';
+// import { asyncMissionsFromAPI } from '../redux/missions/missions';
 
 const Mission = (props) => {
+  // eslint-disable-next-line no-unused-vars
   const dispatch = useDispatch();
   const { mission } = props;
   const {
@@ -12,7 +13,7 @@ const Mission = (props) => {
   } = mission;
 
   const handleRemove = () => {
-    dispatch(asyncJoinMission(id));
+  // dispatch(asyncJoinMission(id));
   };
 
   // const progress = Math.floor(Math.random() * 100);
