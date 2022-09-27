@@ -1,10 +1,7 @@
 /* eslint-disable camelcase */
 import React from 'react';
 import PropTypes from 'prop-types';
-// import './missions.css';
 import { useDispatch } from 'react-redux';
-// import { asyncMissionsFromAPI } from '../redux/missions/missions';
-
 const Mission = (props) => {
   // eslint-disable-next-line no-unused-vars
   const dispatch = useDispatch();
