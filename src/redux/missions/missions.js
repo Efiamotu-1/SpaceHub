@@ -8,10 +8,12 @@ const reducerMission = createSlice({
   initialState,
   reducers: {
     getMissionsAPI: (state, action) => {
-      console.log('AA');
-      // const tmpArray = [];
-      // const a = [...tmpArray, action.payload];
-      return [...state, action.payload];
+      const tmpArray = Object.entries(action.payload).map(([id, value]) => (
+        { ...value, id }
+      ));
+      // eslint-disable-next-line no-param-reassign
+      [...state] = [...tmpArray];
+      return state;
     },
   },
 });
