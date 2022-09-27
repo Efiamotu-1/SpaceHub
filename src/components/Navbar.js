@@ -22,7 +22,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="flex justify-between mx-5 px-5 py-2 bg-gray-00 items-center border-b border-b-gray-200">
+    <nav className="md:flex justify-between mx-5 px-5 py-2 bg-gray-00 items-center border-b border-b-gray-200">
       <div className="flex items-center">
         <img src={Logo} alt="logo" className="w-20 mr-2" />
         <p className="text-3xl">Space Traveler&apos;s Hub</p>
