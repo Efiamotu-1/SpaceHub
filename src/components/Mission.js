@@ -1,27 +1,34 @@
+/* eslint-disable camelcase */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-// eslint-disable-next-line no-unused-vars
-import { asyncJoinMission } from '../redux/missions/missions';
 
 const Mission = (props) => {
   // eslint-disable-next-line no-unused-vars
   const dispatch = useDispatch();
   const { mission } = props;
   const {
-    // eslint-disable-next-line no-unused-vars
-    id, name, description,
+    mission_id, mission_name, description,
   } = mission;
 
-  // const handleRemove = () => {
-  //   dispatch(asyncJoinMission(id));
-  // };
-
-  // const progress = Math.floor(Math.random() * 100);
-  // const chapter = Math.floor(Math.random() * 20);
+  const handleRemove = () => {
+  };
 
   return (
-    <li key={id} />
+    <li key={mission_id}>
+      <div className="missionLi">
+        <div className="description">
+          <div className="main-description">
+            <p className="author">{mission_id}</p>
+            <p className="author">{mission_name}</p>
+            <p className="author">{description}</p>
+          </div>
+          <div className="buttons-div">
+            <button type="button" className="button" onClick={handleRemove}>Remove</button>
+          </div>
+        </div>
+      </div>
+    </li>
   );
 };
 
@@ -29,8 +36,8 @@ export default Mission;
 
 Mission.defaultProps = {
   mission: {
-    id: '',
-    name: '',
+    mission_id: '',
+    mission_name: '',
     description: '',
   },
 };
@@ -39,8 +46,8 @@ Mission.propTypes = {
   mission:
     PropTypes.shape(
       {
-        id: PropTypes.string,
-        name: PropTypes.string,
+        mission_id: PropTypes.string,
+        mission_name: PropTypes.string,
         description: PropTypes.string,
       },
     ),
