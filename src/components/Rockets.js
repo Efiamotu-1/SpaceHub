@@ -1,19 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { bookRocket } from '../redux/rockets/rockets';
+import { bookRocket, cancelReservation } from '../redux/rockets/rockets';
 
 const Rockets = (props) => {
   const dispatch = useDispatch();
-  const reserveRocket = (id) => {
-    dispatch(bookRocket(id));
-  };
+
   const {
     singleRocket,
   } = props;
   const {
     id, name, description, image, reserved,
   } = singleRocket;
+
+  const reserveRocket = (id) => {
+    dispatch(bookRocket(id));
+  };
+
+  const cancelRocket = () => {
+    dispatch(cancelReservation(id));
+  };
+
   return (
     <div key={id} className="md:flex space-x-4 py-5 border-b border-green-800">
       <div className="md:w-1/4 ">
@@ -26,6 +33,7 @@ const Rockets = (props) => {
           {description}
         </h2>
         <button className="button bg-blue-500 hover:bg-blue-600 active:bg-blue-900 py-2 px-3 rounded text-stone-100" type="submit" onClick={() => reserveRocket(id)}>Reserve Rockets</button>
+        <button className="button border border-blue-500 hover:text-stone-600 active:text-stone-900 py-2 px-3 rounded  text-stone-400" type="submit" onClick={() => cancelRocket(id)}>Cancel Reservation</button>
       </div>
     </div>
   );
