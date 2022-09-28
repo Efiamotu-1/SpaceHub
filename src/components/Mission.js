@@ -2,6 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
+// import './mission.css';
 
 const Mission = (props) => {
   // eslint-disable-next-line no-unused-vars
@@ -15,20 +16,24 @@ const Mission = (props) => {
   };
 
   return (
-    <li key={mission_id}>
-      <div className="missionLi">
-        <div className="description">
-          <div className="main-description">
-            <p className="author">{mission_id}</p>
-            <p className="author">{mission_name}</p>
-            <p className="author">{description}</p>
+    <>
+      <li className="missions-li" key={mission_id}>
+        <div className="missionLi">
+          <div className="m_mission">
+            <p>{mission_name}</p>
           </div>
-          <div className="buttons-div">
-            <button type="button" className="button" onClick={handleRemove}>Remove</button>
+          <div className="m_description">
+            <p>{description}</p>
+          </div>
+          <div className="m_status">
+            <p>Active Member</p>
+          </div>
+          <div className="m_button">
+            <button type="button" className="button" onClick={handleRemove}>Join Mission</button>
           </div>
         </div>
-      </div>
-    </li>
+      </li>
+    </>
   );
 };
 

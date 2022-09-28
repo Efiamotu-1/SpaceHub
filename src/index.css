@@ -8,4 +8,144 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  --lines: rgb(204, 201, 201);
+}
+
+.mission-container {
+  width: 98%;
+  margin: 1% auto;
+  border-bottom: 1px solid var(--lines);
+  min-width: 1010px;
+}
+
+.m_line {
+  height: 1px;
+  width: 100%;
+  background-color: var(--lines);
+  margin: 1.5% auto;
+}
+
+.m_header {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid var(--lines);
+  font-size: 18px;
+  font-weight: bold;
+  width: 98%;
+  margin: auto;
+}
+
+.mu_mission {
+  flex: 22;
+  border-left: 1px solid var(--lines);
+  padding-left: 0.5%;
+}
+
+.mu_mission p {
+  text-align: left;
+  margin: 5% 0.5%;
+}
+
+.mu_description {
+  flex: 131;
+  border-left: 1px solid var(--lines);
+  padding-left: 0.5%;
+  align-self: center;
+}
+
+.mu_description p {
+  text-align: left;
+  margin: 1% 0.5%;
+}
+
+.mu_status {
+  flex: 21;
+  border-left: 1px solid var(--lines);
+  display: flex;
+  align-items: center;
+}
+
+.mu_status p {
+  text-align: center;
+  margin: 5%;
+}
+
+.mu_button {
+  flex: 26;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  border-left: 1px solid var(--lines);
+  border-right: 1px solid var(--lines);
+}
+
+.ul-container {
+  width: 98%;
+  margin: auto;
+}
+
+.missionLi {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid var(--lines);
+}
+
+.missions-li:nth-child(odd) {
+  background: rgb(245, 241, 241);
+}
+
+.m_mission {
+  flex: 22;
+  font-size: 18px;
+  font-weight: bold;
+  border-left: 1px solid var(--lines);
+  padding-left: 0.5%;
+}
+
+.m_description {
+  flex: 131;
+  font-size: 14px;
+  font-weight: normal;
+  border-left: 1px solid var(--lines);
+  padding-left: 0.5%;
+}
+
+.m_status {
+  flex: 21;
+  font-size: 14px;
+  border-left: 1px solid var(--lines);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.m_status p {
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 10%;
+  color: white;
+  font-weight: bold;
+  background-color: #06bfcc;
+  margin: 5%;
+}
+
+.m_button {
+  flex: 26;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  border-left: 1px solid var(--lines);
+  border-right: 1px solid var(--lines);
+}
+
+.m_button button {
+  border: 1px solid gray;
+  border-radius: 10%;
+  color: grey;
+  font-weight: bold;
+  padding: 5%;
 }
