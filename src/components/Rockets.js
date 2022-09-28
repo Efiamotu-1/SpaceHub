@@ -32,8 +32,8 @@ const Rockets = (props) => {
           {reserved && <button className="button bg-sky-500 hover:bg-sky-600 active:bg-sky-900 py-1 px-2 rounded-lg text-stone-100 mr-2" type="submit">reserved</button>}
           {description}
         </h2>
-        <button className="button bg-blue-500 hover:bg-blue-600 active:bg-blue-900 py-2 px-3 rounded text-stone-100" type="submit" onClick={() => reserveRocket(id)}>Reserve Rockets</button>
-        <button className="button border border-blue-500 hover:text-stone-600 active:text-stone-900 py-2 px-3 rounded  text-stone-400" type="submit" onClick={() => cancelRocket(id)}>Cancel Reservation</button>
+        {reserved ? <button className="button border border-blue-500 hover:text-stone-600 active:text-stone-900 py-2 px-3 rounded  text-stone-400" type="submit" onClick={() => cancelRocket(id)}>Cancel Reservation</button>
+          : <button className="button bg-blue-500 hover:bg-blue-600 active:bg-blue-900 py-2 px-3 rounded text-stone-100" type="submit" onClick={() => reserveRocket(id)}>Reserve Rockets</button> }
       </div>
     </div>
   );
