@@ -32,7 +32,8 @@ It'a web application for a company that provides commercial and scientific space
 
 
 👤 **Carlos Molina**
- GitHub: https://github.com/cmolinan
+- GitHub: https://github.com/cmolinan
+
 ## �� Contributing
 Contributions, issues, and feature requests are welcome!
 Feel free to check the issues page.

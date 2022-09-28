@@ -126,7 +126,8 @@
   background-color: grey;
 }
 
-.m_button {
+.m_button,
+.m_button1 {
   flex: 26;
   font-size: 16px;
   display: flex;
@@ -137,10 +138,22 @@
   border-right: 1px solid var(--lines);
 }
 
-.m_button button {
-  border: 1px solid gray;
+.m_button button,
+.m_button1 button {
+  border: 1px solid  rgb(247, 46, 46);
   border-radius: 10%;
-  color: grey;
-  font-weight: bold;
+  color: rgb(247, 46, 46);
+  font-weight: normal;
   padding: 5%;
+  height: 40px;
+}
+
+.m_button1 button {
+  border: 1px solid rgb(15, 14, 14);
+  color: rgb(15, 14, 14);
+}
+
+.m_button button:hover,
+.m_button1 button:hover {
+  border: 2px solid;
 }
