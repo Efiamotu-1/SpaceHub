@@ -1,35 +1,43 @@
-/* eslint-disable camelcase */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import './mission.css';
+import { toggleReservation } from '../redux/missions/missions';
 
 const Mission = (props) => {
-  // eslint-disable-next-line no-unused-vars
   const dispatch = useDispatch();
-  const { mission } = props;
   const {
-    mission_id, mission_name, description,
-  } = mission;
+    id, name, description, status,
+  } = props;
 
-  const handleRemove = () => {
+  const handleJoin = () => {
+    dispatch(toggleReservation(id));
   };
+
+  const badge = status
+    ? { style: 'm_status', text: 'Active Member' }
+    : { style: 'm_status1', text: 'Not A Member' };
 
   return (
     <>
-      <li className="missions-li" key={mission_id}>
+      <li className="missions-li" key={id}>
         <div className="missionLi">
           <div className="m_mission">
-            <p>{mission_name}</p>
+            <p>
+              {name}
+            </p>
           </div>
           <div className="m_description">
             <p>{description}</p>
           </div>
-          <div className="m_status">
-            <p>Active Member</p>
+          <div className={badge.style}>
+            <p>{badge.text}</p>
           </div>
           <div className="m_button">
-            <button type="button" className="button" onClick={handleRemove}>Join Mission</button>
+            <button type="button" className="button" onClick={handleJoin}>
+              Join Mission
+              {status}
+            </button>
           </div>
         </div>
       </li>
@@ -40,20 +48,15 @@ const Mission = (props) => {
 export default Mission;
 
 Mission.defaultProps = {
-  mission: {
-    mission_id: '',
-    mission_name: '',
-    description: '',
-  },
+  id: '',
+  name: '',
+  description: '',
+  status: false,
 };
 
 Mission.propTypes = {
-  mission:
-    PropTypes.shape(
-      {
-        mission_id: PropTypes.string,
-        mission_name: PropTypes.string,
-        description: PropTypes.string,
-      },
-    ),
+  id: PropTypes.string,
+  name: PropTypes.string,
+  description: PropTypes.string,
+  status: PropTypes.bool,
 };
