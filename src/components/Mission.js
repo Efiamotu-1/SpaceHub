@@ -17,7 +17,7 @@ const Mission = (props) => {
 
   return (
     <>
-    <p className='big-red'>Hello</p>
+      <p className="big-red">Hello</p>
       <li className="missions-li" key={mission_id}>
         <div className="missionLi">
           <div className="m_mission">
