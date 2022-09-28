@@ -3,12 +3,16 @@ import { useSelector, useDispatch } from 'react-redux';
 import Mission from './Mission';
 import { asyncMissionsFromAPI } from '../redux/missions/missions';
 
+let firstTime = true;
 const MissionsList = () => {
   const missionsArray = useSelector((state) => state.stMissions);
 
   const dispatch = useDispatch();
 
   useEffect(() => {
+    if (!firstTime) return;
+    firstTime = false;
+
     dispatch(asyncMissionsFromAPI());
   }, [dispatch]);
 
