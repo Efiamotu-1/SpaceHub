@@ -14,10 +14,6 @@ const Mission = (props) => {
     dispatch(toggleReservation(id));
   };
 
-  const badge = status
-    ? { style: 'm_status', text: 'Active Member' }
-    : { style: 'm_status1', text: 'Not A Member' };
-
   const button = status
     ? { style: 'm_button', text: 'Leave Mission' }
     : { style: 'm_button1', text: 'Join Mission' };
@@ -34,8 +30,10 @@ const Mission = (props) => {
           <div className="m_description">
             <p>{description}</p>
           </div>
-          <div className={badge.style}>
-            <p>{badge.text}</p>
+          <div className={status ? ('m_status') : ('m_status1')}>
+            <p>
+              {status ? 'Active Member' : 'Not a Member'}
+            </p>
           </div>
           <div className={button.style}>
             <button type="button" className="button" onClick={handleJoin}>
