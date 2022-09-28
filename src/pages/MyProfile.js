@@ -1,7 +1,10 @@
 import React from 'react';
+import Myprofile from '../components/Myprofile';
 
 const MyProfile = () => (
-  <div>MyProfile</div>
+  <div>
+    <Myprofile />
+  </div>
 );
 
 export default MyProfile;
