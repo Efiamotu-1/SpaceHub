@@ -106,6 +106,7 @@
   font-weight: normal;
   border-left: 1px solid var(--lines);
   padding-left: 0.5%;
+  overflow-y: auto;
 }
 
 .m_statusAndButton {
@@ -188,7 +189,7 @@
   .m_button,
   .m_button1 {
     flex: 19;
-    min-width: 140px;
+    min-width: 120px;
   }
 }
 
@@ -196,17 +197,100 @@
   .mu_statusAndButton,
   .m_statusAndButton {
     flex-direction: column;
+    min-width: 160px;
+    justify-content: space-betweend;
+    border-right: 1px solid var(--lines);
+  }
+
+  .m_status,
+  .m_status1 {
+    flex: 1;
+  }
+
+  .m_mission,
+  .mu_mission {
+    min-width: 120px;
+  }
+
+  .m_description {
+    padding-top: 5px;
+    max-height: 180px;
+  }
+
+  .m_description:hover {
+    max-height: 400px;
   }
 
   .mu_button,
   .m_button,
   .m_button1 {
-    flex: 19;
+    flex: 1px;
+  }
+
+  .m_button,
+  .m_button1 {
     font-size: 16px;
-    min-width: 140px;
+    border-right: none;
   }
 }
 
-/* @media only screen and (max-width: 320px) {
+@media only screen and (max-width: 479px) {
+  .mission-container {
+    width: 100%;
+  }
 
-} */
+  .mu_statusAndButton,
+  .m_statusAndButton {
+    flex-direction: column;
+    min-width: 100px;
+    justify-content: space-betweend;
+    border-right: 1px solid var(--lines);
+  }
+
+  .m_mission,
+  .mu_mission,
+  .mu_description,
+  .mu_status {
+    font-size: 16px;
+  }
+
+  .m_description {
+    padding-top: 3px;
+    font-size: 12px;
+    min-width: 90px;
+    max-height: 150px;
+  }
+
+  .m_description:hover {
+    max-height: 350px;
+  }
+
+  .m_status,
+  .m_status1 {
+    flex: 1;
+    font-size: 12px;
+    min-width: 40px;
+  }
+
+  .m_mission,
+  .mu_mission {
+    min-width: 90px;
+  }
+
+  .m_mission {
+    font-size: 14px;
+  }
+
+  .mu_button,
+  .m_button,
+  .m_button1 {
+    flex: 1px;
+  }
+
+  .m_button,
+  .m_button1 {
+    font-size: 12px;
+    border-right: none;
+  }
+
+}
