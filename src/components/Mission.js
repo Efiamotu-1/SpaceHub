@@ -2,6 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
+import './mission.css';
 
 const Mission = (props) => {
   // eslint-disable-next-line no-unused-vars
