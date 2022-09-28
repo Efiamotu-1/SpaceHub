@@ -3,7 +3,8 @@
   width: 98%;
   margin: 1% auto;
   border-bottom: 1px solid var(--lines);
-  min-width: 1010px;
+
+  /* min-width: 1010px; */
 }
 
 .m_line {
@@ -13,7 +14,7 @@
   margin: 1.5% auto;
 }
 
-.m_header {
+.mu_header {
   display: flex;
   flex-direction: row;
   border-top: 1px solid var(--lines);
@@ -46,8 +47,15 @@
   margin: 1% 0.5%;
 }
 
+.mu_statusAndButton {
+  display: flex;
+  flex-direction: row;
+  flex: 47;
+  min-width: 250px;
+}
+
 .mu_status {
-  flex: 21;
+  flex: 50;
   border-left: 1px solid var(--lines);
   display: flex;
   align-items: center;
@@ -60,7 +68,7 @@
 }
 
 .mu_button {
-  flex: 26;
+  flex: 50;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,9 +108,16 @@
   padding-left: 0.5%;
 }
 
+.m_statusAndButton {
+  display: flex;
+  flex-direction: row;
+  flex: 47;
+  min-width: 250px;
+}
+
 .m_status,
 .m_status1 {
-  flex: 21;
+  flex: 50;
   font-size: 14px;
   border-left: 1px solid var(--lines);
   display: flex;
@@ -128,7 +143,7 @@
 
 .m_button,
 .m_button1 {
-  flex: 26;
+  flex: 50;
   font-size: 16px;
   display: flex;
   align-items: center;
@@ -157,3 +172,41 @@
 .m_button1 button:hover {
   border: 2px solid;
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .m_description,
+  .mu_description {
+    flex: 80;
+  }
+
+  .m_mission,
+  .mu_mission {
+    min-width: 110px;
+  }
+
+  .mu_button,
+  .m_button,
+  .m_button1 {
+    flex: 19;
+    min-width: 140px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .mu_statusAndButton,
+  .m_statusAndButton {
+    flex-direction: column;
+  }
+
+  .mu_button,
+  .m_button,
+  .m_button1 {
+    flex: 19;
+    font-size: 16px;
+    min-width: 140px;
+  }
+}
+
+/* @media only screen and (max-width: 320px) {
+
+} */

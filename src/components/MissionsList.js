@@ -19,11 +19,13 @@ const MissionsList = () => {
   return (
     <div className="mission-container">
       <div className="m_line"> </div>
-      <div className="m_header">
+      <div className="mu_header">
         <div className="mu_mission"><p>Mission</p></div>
         <div className="mu_description"><p>Description</p></div>
-        <div className="mu_status"><p>Status</p></div>
-        <div className="mu_button"> </div>
+        <div className="mu_statusAndButton">
+          <div className="mu_status"><p>Status</p></div>
+          <div className="mu_button"> </div>
+        </div>
       </div>
       <ul className="ul-container">
         {missionsArray.map((mission) => (

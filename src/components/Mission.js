@@ -30,15 +30,17 @@ const Mission = (props) => {
           <div className="m_description">
             <p>{description}</p>
           </div>
-          <div className={status ? ('m_status') : ('m_status1')}>
-            <p>
-              {status ? 'Active Member' : 'Not a Member'}
-            </p>
-          </div>
-          <div className={button.style}>
-            <button type="button" className="button" onClick={handleJoin}>
-              {button.text}
-            </button>
+          <div className="m_statusAndButton">
+            <div className={status ? ('m_status') : ('m_status1')}>
+              <p>
+                {status ? 'Active Member' : 'Not a Member'}
+              </p>
+            </div>
+            <div className={button.style}>
+              <button type="button" className="button" onClick={handleJoin}>
+                {button.text}
+              </button>
+            </div>
           </div>
         </div>
       </li>
