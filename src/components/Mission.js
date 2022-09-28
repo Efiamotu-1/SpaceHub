@@ -18,6 +18,10 @@ const Mission = (props) => {
     ? { style: 'm_status', text: 'Active Member' }
     : { style: 'm_status1', text: 'Not A Member' };
 
+  const button = status
+    ? { style: 'm_button', text: 'Leave Mission' }
+    : { style: 'm_button1', text: 'Join Mission' };
+
   return (
     <>
       <li className="missions-li" key={id}>
@@ -33,10 +37,9 @@ const Mission = (props) => {
           <div className={badge.style}>
             <p>{badge.text}</p>
           </div>
-          <div className="m_button">
+          <div className={button.style}>
             <button type="button" className="button" onClick={handleJoin}>
-              Join Mission
-              {status}
+              {button.text}
             </button>
           </div>
         </div>
