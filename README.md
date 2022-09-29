@@ -15,7 +15,7 @@ It'a web application for a company that provides commercial and scientific space
 - GitFlow
 - TailwindCss
 ## Live Demo
-(Under construction)
+(Link to live demo)[https://react-redux-capstone-spacex.netlify.app/]
 ## Getting Started
 - To get a local copy up, clone the repo like this: 
 ​
