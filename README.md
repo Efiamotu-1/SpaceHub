@@ -1,75 +1,48 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
-# Project Name
-
-> Description the project.
-
-
+n![](https://img.shields.io/badge/Microverse-blueviolet)
+​
+# SpaceHub
+It'a web application for a company that provides commercial and scientific space travel services. The application allow users to book rockets and join selected space missions, working with real live data from the SpaceX API.
+​
 ## Built With
-
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
-
+- Redux and React JS 
+    { 
+      components, events, states, hooks, 
+      props, router, reducers and actions, API
+    }
+- JSX
+- JavaScript
+- Webpack
+- GitFlow
+- TailwindCss
+## Live Demo
+(Link to live demo)[https://react-redux-capstone-spacex.netlify.app/]
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
+- To get a local copy up, clone the repo like this: 
+​
+  git clone https://github.com/Efiamotu-1/SpaceHub
+​
+- Install the dependencies using `npm install` and then run the project from the root of the folder using this command `npm run start`
 ## Authors
 
-👤 **Author1**
+👤 **Habeeb Musa Efiamotu**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Efiamotu](https://github.com/Efiamotu-1)
+- Twitter: [@EFYAMOTU](https://twitter.com/EFYAMOTU)
+- LinkedIn: [musa-habeeb](https://www.linkedin.com/in/musa-habeeb/)
 
-👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **Carlos Molina**
+- GitHub: https://github.com/cmolinan
 
-## 🤝 Contributing
-
+## �� Contributing
 Contributions, issues, and feature requests are welcome!
-
+Feel free to check the issues page.
 Feel free to check the [issues page](../../issues/).
-
+​
 ## Show your support
-
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+## Acknowledgments 
+This webpage is based on a Microverse request
+## �� License
+This project is [MIT](./MIT.md) licensed.
+ 

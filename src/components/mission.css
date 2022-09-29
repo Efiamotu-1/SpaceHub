@@ -1,0 +1,293 @@
+
+.mission-container {
+  width: 98%;
+  margin: 1% auto;
+  border-bottom: 1px solid var(--lines);
+
+  /* min-width: 1010px; */
+}
+
+.m_line {
+  height: 1px;
+  width: 100%;
+  background-color: var(--lines);
+  margin: 1.5% auto;
+}
+
+.mu_header {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid var(--lines);
+  font-size: 18px;
+  font-weight: bold;
+  width: 98%;
+  margin: auto;
+}
+
+.mu_mission {
+  flex: 22;
+  border-left: 1px solid var(--lines);
+  padding-left: 0.5%;
+}
+
+.mu_mission p {
+  text-align: left;
+  margin: 5% 0.5%;
+}
+
+.mu_description {
+  flex: 131;
+  border-left: 1px solid var(--lines);
+  padding-left: 0.5%;
+  align-self: center;
+}
+
+.mu_description p {
+  text-align: left;
+  margin: 1% 0.5%;
+}
+
+.mu_statusAndButton {
+  display: flex;
+  flex-direction: row;
+  flex: 47;
+  min-width: 250px;
+}
+
+.mu_status {
+  flex: 50;
+  border-left: 1px solid var(--lines);
+  display: flex;
+  align-items: center;
+  min-width: 120px;
+}
+
+.mu_status p {
+  text-align: center;
+  margin: 5%;
+}
+
+.mu_button {
+  flex: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  border-left: 1px solid var(--lines);
+  border-right: 1px solid var(--lines);
+}
+
+.ul-container {
+  width: 98%;
+  margin: auto;
+}
+
+.missionLi {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid var(--lines);
+}
+
+.missions-li:nth-child(odd) {
+  background: rgb(245, 241, 241);
+}
+
+.m_mission {
+  flex: 22;
+  font-size: 18px;
+  font-weight: bold;
+  border-left: 1px solid var(--lines);
+  padding-left: 0.5%;
+}
+
+.m_description {
+  flex: 131;
+  font-size: 14px;
+  font-weight: normal;
+  border-left: 1px solid var(--lines);
+  padding-left: 0.5%;
+  overflow-y: auto;
+}
+
+.m_statusAndButton {
+  display: flex;
+  flex-direction: row;
+  flex: 47;
+  min-width: 250px;
+}
+
+.m_status,
+.m_status1 {
+  flex: 50;
+  font-size: 14px;
+  border-left: 1px solid var(--lines);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+}
+
+.m_status p,
+.m_status1 p {
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 10%;
+  color: white;
+  font-weight: bold;
+  background-color: #06bfcc;
+  margin: 5%;
+}
+
+.m_status1 p {
+  background-color: grey;
+}
+
+.m_button,
+.m_button1 {
+  flex: 50;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  border-left: 1px solid var(--lines);
+  border-right: 1px solid var(--lines);
+}
+
+.m_button button,
+.m_button1 button {
+  border: 1px solid  rgb(247, 46, 46);
+  border-radius: 10%;
+  color: rgb(247, 46, 46);
+  font-weight: normal;
+  padding: 5%;
+  height: 40px;
+}
+
+.m_button1 button {
+  border: 1px solid rgb(15, 14, 14);
+  color: rgb(15, 14, 14);
+}
+
+.m_button button:hover,
+.m_button1 button:hover {
+  border: 2px solid;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .m_description,
+  .mu_description {
+    flex: 80;
+  }
+
+  .m_mission,
+  .mu_mission {
+    min-width: 110px;
+  }
+
+  .mu_button,
+  .m_button,
+  .m_button1 {
+    flex: 19;
+    min-width: 120px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .mu_statusAndButton,
+  .m_statusAndButton {
+    flex-direction: column;
+    min-width: 160px;
+    border-right: 1px solid var(--lines);
+  }
+
+  .m_status,
+  .m_status1 {
+    flex: 1;
+  }
+
+  .m_mission,
+  .mu_mission {
+    min-width: 120px;
+  }
+
+  .m_description {
+    padding-top: 5px;
+    max-height: 180px;
+  }
+
+  .m_description:hover {
+    max-height: 400px;
+  }
+
+  .mu_button,
+  .m_button,
+  .m_button1 {
+    flex: 1px;
+  }
+
+  .m_button,
+  .m_button1 {
+    font-size: 16px;
+    border-right: none;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .mission-container {
+    width: 100%;
+  }
+
+  .mu_statusAndButton,
+  .m_statusAndButton {
+    flex-direction: column;
+    min-width: 100px;
+    border-right: 1px solid var(--lines);
+  }
+
+  .m_mission,
+  .mu_mission,
+  .mu_description,
+  .mu_status {
+    font-size: 16px;
+  }
+
+  .m_description {
+    padding-top: 3px;
+    font-size: 12px;
+    min-width: 90px;
+    max-height: 150px;
+  }
+
+  .m_description:hover {
+    max-height: 350px;
+  }
+
+  .m_status,
+  .m_status1 {
+    flex: 1;
+    font-size: 12px;
+    min-width: 40px;
+  }
+
+  .m_mission,
+  .mu_mission {
+    min-width: 90px;
+  }
+
+  .m_mission {
+    font-size: 14px;
+  }
+
+  .mu_button,
+  .m_button,
+  .m_button1 {
+    flex: 1px;
+  }
+
+  .m_button,
+  .m_button1 {
+    font-size: 12px;
+    border-right: none;
+  }
+}

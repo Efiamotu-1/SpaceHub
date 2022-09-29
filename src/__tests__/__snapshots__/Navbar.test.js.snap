@@ -1,0 +1,170 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar component Correct render of Navbar 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <nav
+        class="md:flex justify-between mx-5 px-5 py-2 bg-gray-00 items-center border-b border-b-gray-200"
+      >
+        <div
+          class="flex items-center"
+        >
+          <img
+            alt="logo"
+            class="w-20 mr-2"
+            src="space-img.png"
+          />
+          <p
+            class="text-3xl"
+          >
+            Space Traveler's Hub
+          </p>
+        </div>
+        <div>
+          <div
+            class="flex space-x-14 items-center mx-5"
+          >
+            <ul
+              class="flex space-x-14 text-2l text-blue-500"
+            >
+              <li>
+                <a
+                  aria-current="page"
+                  class="hover:text-stone-900 active:text-gray-400 active"
+                  href="/"
+                >
+                  ROCKETS
+                </a>
+              </li>
+              <li>
+                <a
+                  class="hover:text-stone-900 active:text-gray-400"
+                  href="/missions"
+                >
+                  MISSIONS
+                </a>
+              </li>
+              <li>
+                <a
+                  class="hover:text-stone-900 active:text-gray-400"
+                  href="/my-profile"
+                >
+                  MY PROFILE
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </body>,
+  "container": <div>
+    <nav
+      class="md:flex justify-between mx-5 px-5 py-2 bg-gray-00 items-center border-b border-b-gray-200"
+    >
+      <div
+        class="flex items-center"
+      >
+        <img
+          alt="logo"
+          class="w-20 mr-2"
+          src="space-img.png"
+        />
+        <p
+          class="text-3xl"
+        >
+          Space Traveler's Hub
+        </p>
+      </div>
+      <div>
+        <div
+          class="flex space-x-14 items-center mx-5"
+        >
+          <ul
+            class="flex space-x-14 text-2l text-blue-500"
+          >
+            <li>
+              <a
+                aria-current="page"
+                class="hover:text-stone-900 active:text-gray-400 active"
+                href="/"
+              >
+                ROCKETS
+              </a>
+            </li>
+            <li>
+              <a
+                class="hover:text-stone-900 active:text-gray-400"
+                href="/missions"
+              >
+                MISSIONS
+              </a>
+            </li>
+            <li>
+              <a
+                class="hover:text-stone-900 active:text-gray-400"
+                href="/my-profile"
+              >
+                MY PROFILE
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
