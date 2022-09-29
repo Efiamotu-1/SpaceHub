@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import Logo from '../assets/images/space-img.png';
 
 const Navbar = () => {
+  const activeLink = 'underline hover:text-stone-900 active:text-gray-400';
   const links = [
     {
       id: 1,
@@ -38,7 +39,7 @@ const Navbar = () => {
                 <NavLink
                   end
                   to={path}
-                  className="hover:text-stone-900 active:text-gray-400"
+                  className={({ isActive }) => (isActive ? activeLink : 'hover:text-stone-900 active:text-gray-400')}
                 >
                   {text}
                 </NavLink>
