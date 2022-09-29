@@ -9,7 +9,7 @@ const Myprofile = () => {
       <div className="mt-5 flex mx-auto w-11/12 space-x-5">
         {/* Missions Filter & render */}
         <div className="w-1/2">
-          <p className="font-thin text-3xl"> My Rockets </p>
+          <p className="font-thin text-3xl">My Missions</p>
           <div className="border mt-3 rounded">
             {missions.filter((mission) => mission.reserved === true).map((mission) => (mission && <div className="px-4 py-2 border">{mission.mission_name}</div>))}
 
